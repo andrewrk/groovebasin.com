@@ -10,7 +10,71 @@
     Music player server with a web-based user interface inspired by Amarok 1.4
     </p>
     <p>
+Run it on a server (such as a
+<a href="http://www.raspberrypi.org/">Raspberry Pi</a>
+) connected to some speakers in your home or office. Guests can control the music player by connecting with a laptop, tablet, or smart phone. Further, you can stream your music library remotely.
+    </p>
+    <p>
+Groove Basin works with your personal music library; not an external music service. Groove Basin will never support DRM content.
+    </p>
+    <p>
+Live discussion in #libgroove on Freenode.
+</p>
+<p>
     <a href="https://github.com/andrewrk/groovebasin">Check it out on GitHub</a>
     </p>
+    <h2>Features</h2>
+    <ul>
+      <li>
+        Fast, responsive UI. It feels like a desktop app, not a web app.
+      </li>
+      <li>
+        Dynamic playlist mode which automatically queues random songs, favoring
+        songs that have not been queued recently.
+      </li>
+      <li>
+        Drag and drop upload. Drag and drop playlist editing. Rich keyboard
+        shortcuts.
+      </li>
+      <li>
+        Lazy multi-core
+        <a href="http://tech.ebu.ch/loudness">EBU R128 loudness scanning</a>
+        (tags compatible with
+        <a href="http://wiki.hydrogenaudio.org/index.php?title=ReplayGain_1.0_specification">ReplayGain</a>)
+        and automatic switching between track and album mode.
+        <a href="http://www.youtube.com/watch?v=iuEtQqC-Sqo">"Loudness Zen</a>
+      </li>
+      <li>
+        Streaming support. You can listen to your music library - or share it
+        with your friends - even when you are not physically near your home
+        speakers.
+      </li>
+      <li>
+        MPD protocol support. This means you already have a selection of
+        <a href="http://mpd.wikia.com/wiki/Clients">clients</a>
+        which integrate with Groove Basin.
+        For example
+        <a href="https://github.com/abarisain/dmix">MPDroid</a>.
+      </li>
+      <li>
+        <a href="http://www.last.fm/">Last.fm</a> scrobbling.
+      </li>
+      <li>
+        File system monitoring. Add songs anywhere inside your music directory
+        and
+        they instantly appear in your library in real time.
+      </li>
+      <li>
+        Supports GrooveBasin Protocol on the same port as MPD Protocol - use the
+        `protocolupgrade` command to upgrade.
+      </li>
+    </ul>
+    <h2>Live Demo</h2>
+    <p><a href="http://demo.groovebasin.com/">Try out the live demo</a></p>
+    <h2>Screenshots</h2>
+    <img src="http://superjoesoftware.com/temp/groove-basin-0.0.4.png">
+    <img src="http://superjoesoftware.com/temp/groove-basin-0.0.4-lib-menu.png">
+    <img src="http://superjoesoftware.com/temp/groove-basin-0.0.4-shortcuts.png">
+    <img src="http://superjoesoftware.com/temp/groove-basin-0.0.4-lastfm.png">
   </body>
 </html>
