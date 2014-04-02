@@ -1,0 +1,4 @@
+#!/bin/bash
+
+s3cmd sync -P --add-header="Cache-Control: max-age=7200, must-revalidate" www/ s3://groovebasin.com/
+
