@@ -1,0 +1,228 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: Arial, Verdana, Tahoma;
+	color: #111111;
+}
+
+a {
+	color: #111111;
+}
+
+a.button {
+	display: inline-block;
+	padding: 5px;
+	color: #111111;
+	margin: 15px 15px 0 0;
+	text-decoration: none;
+	background-color: #f1f1f1;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+	font-size: 24px;
+	line-height: 24px;
+}
+
+a.button:hover {
+	color: #1d4c7a;
+}
+
+a.button span.small {
+	font-size: 20px;
+}
+
+a.button span {
+	/*font-size: 30px;*/
+}
+
+a.small {
+	font-size: 14px;
+}
+
+.clear {
+	clear: both;
+}
+
+header, #about, #features, #demo, #articles, #screenshots, footer {
+	margin: 0 auto;
+	width: 70%;
+	padding: 30px 15% 30px 15%;
+}
+
+
+header {
+	height: 50px;
+}
+
+header img, header h1 {
+	float: left;
+}
+
+header nav {
+	float: right;
+}
+
+header img {
+	height: 50px;
+	margin-right: 15px;
+}
+
+header h1 {
+	line-height: 50px;
+}
+
+header h1 span {
+	color: #1d4c7a;
+}
+
+header nav ul {
+	list-style: none outside;
+}
+
+header nav ul li {
+	float: left;
+	height: 50px;
+}
+
+header nav ul li a {
+	line-height: 50px;
+	text-decoration: none;
+	font-weight: bold;
+	margin-left: 15px;
+}
+
+header nav ul li a:hover {
+	color: #1d4c7a;
+}
+
+
+#about {
+	background-color: #0b3e6f;
+	color: #f1f1f1;
+}
+
+#about p.jumbo {
+	font-size: 36px;
+	margin: 0 0 30px 0;
+}
+
+#features ul {
+	list-style: square inside;
+}
+
+#features ul li {
+	padding: 8px 0;
+}
+
+#demo {
+	background-color: #111111;
+	color: #f1f1f1;
+}
+
+
+#articles {
+	display: block;
+	background-color: #f1f1f1;
+	/*min-height: 205px;*/
+}
+
+#articles article {
+	float: left;
+	width: 47%;
+	padding: 15px 1%;
+	background-color: #ffffff;
+}
+
+#articles article h3 {
+	margin-bottom: 15px;
+}
+
+#articles article:nth-child(2n+1) {
+	margin-left: 2%;
+}
+
+
+#screenshots {
+	/*clear: both;*/
+}
+
+#screenshots img {
+	width: 49%;
+	float: left;
+	margin-bottom: 15px;
+}
+
+#screenshots img:nth-child(2n+1) {
+	margin-left: 2%;
+}
+
+footer {
+	color: #f1f1f1;
+	background-color: #111111;
+}
+
+footer a {
+	color: #f1f1f1;
+}
+
+
+@media (max-width: 1000px) {
+	header, #about, #features, #demo, #articles, #screenshots, footer {
+		padding-left: 5%;
+		padding-right: 5%;
+		width: 90%;
+	}
+
+	#about p.jumbo {
+		font-size: 24px;
+	}
+
+	#screenshots img {
+		clear: both;
+		width: 100%;
+	}
+
+	#screenshots img:nth-child(2n+1) {
+		margin: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	header nav {
+		margin-top: 15px;
+		width: 100%;
+		clear: both;
+	}
+
+	header nav ul li {
+		clear: both;
+		margin: 0;
+		border-bottom: 1px solid #f1f1f1;
+		width: 100%;
+	}
+
+	header nav ul li:last-child {
+		border: none;
+	}
+
+	#articles article {
+		padding: 5%;
+		width: 39%;
+	}
+}
+
+@media (max-width: 500px) {
+	#articles article {
+		clear: both;
+		width: 90%;
+		margin-bottom: 15px;
+	}
+
+	#articles article:nth-child(2n+1) {
+		margin: 0;
+	}
+}
