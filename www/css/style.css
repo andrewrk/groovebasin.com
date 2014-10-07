@@ -150,10 +150,14 @@ header nav ul li a:hover {
 	/*clear: both;*/
 }
 
-#screenshots img {
-	width: 49%;
+#screenshots a {
 	float: left;
+  width: 49%;
 	margin-bottom: 15px;
+}
+
+#screenshots img {
+  width: 100%;
 }
 
 #screenshots img:nth-child(2n+1) {
